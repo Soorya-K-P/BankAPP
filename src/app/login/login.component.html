@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4 container border border-2 mt-3 ms-5 w-25 p-5 text-center">
+        <div><img src="../../assets/image/Banks (1).jpg" alt="" height="25%" width="100px"><br><br>
+            <h3 style="text-align:center"> My Bank</h3><br>
+            <!---string interpolation-->
+            <h6>{{aim}}</h6>
+            <input #acno type="text" id="acno" class="form-control" [placeholder]="account"><br>
+            <input #pswd type="password" id="pswd" class="form-control" placeholder="Password"><br>
+            <button class="btn btn-info" (click)="login(acno,pswd)" type="button">Login</button><br>
+            <a href="">Forgot password</a><br><a href="./signup.html">Sign up</a>
+        </div>
+    </div>
+</div>
