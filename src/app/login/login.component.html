@@ -5,10 +5,10 @@
             <h3 style="text-align:center"> My Bank</h3><br>
             <!---string interpolation-->
             <h6>{{aim}}</h6>
-            <input [(ngModel)]="acno" type="text" id="acno" class="form-control" [placeholder]="account"><br>
-            <input [(ngModel)]="pswd" type="password" id="pswd" class="form-control" placeholder="Password"><br>
+            <input [(ngModel)]="acno" type="text" id="acno" name="account no" class="form-control" [placeholder]="account"><br>
+            <input [(ngModel)]="pswd" type="password" id="pswd" name="password" class="form-control" placeholder="Password"><br>
             <button class="btn btn-info" (click)="login()" type="button">Login</button><br>
-            <a href="">Forgot password</a><br><a href="./signup.html">Sign up</a>
+            <a href="">Forgot password</a><br><a routerLink="register">Sign up</a>
         </div>
     </div>
 </div>
